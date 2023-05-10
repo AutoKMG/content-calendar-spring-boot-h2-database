@@ -9,3 +9,6 @@ CREATE TABLE IF NOT EXISTS Content (
     url varchar(255),
     primary key (id)
 );
+
+INSERT INTO Content(title, desc, status, content_type, date_created)
+VALUES (  'Testing inserting to database', 'it is working', 'IDEA', 'ARTICLE',CURRENT_TIMESTAMP() );
