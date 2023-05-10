@@ -1,0 +1,55 @@
+### Find all content
+
+GET http://localhost:8080/api/content
+
+### Get Content By ID
+
+GET http://localhost:8080/api/content
+
+### Create new content
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+    "id": 2,
+    "title": "This is my second blog post",
+    "desc": "My second blog post",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-05-10T15:57:52.1666519",
+    "dateUpdated": null,
+    "url": ""
+}
+
+### Update existing content
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "This is my first blog post",
+  "desc": "My first blog post after edit",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-05-10T15:57:52.1666519",
+  "dateUpdated": null,
+  "url": ""
+}
+
+### Update existing content with invalid id
+PUT http://localhost:8080/api/content/99
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "This is my first blog post",
+  "desc": "My first blog post after edit",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-05-10T15:57:52.1666519",
+  "dateUpdated": null,
+  "url": ""
+}
+
+### Delete content by id
+DELETE http://localhost:8080/api/content/2
