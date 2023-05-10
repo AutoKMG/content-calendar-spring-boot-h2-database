@@ -11,7 +11,6 @@ POST http://localhost:8080/api/content
 Content-Type: application/json
 
 {
-    "id": 2,
     "title": "This is my second blog post",
     "desc": "My second blog post",
     "status": "IDEA",
@@ -52,4 +51,4 @@ Content-Type: application/json
 }
 
 ### Delete content by id
-DELETE http://localhost:8080/api/content/2
+DELETE http://localhost:8080/api/content/3
